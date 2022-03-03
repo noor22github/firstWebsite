@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UI&UX-Assignment</title>
+	<!-- how to install bootsrap in offline way -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="emplayer.css">
+	<!-- fa icons -->
+	<script src="https://kit.fontawesome.com/aeca8c0752.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="bg-black">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6f42c1; ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="images/emclogo.jpg" alt="" width="90" height="72"></a> 
+			<p class="fw-bolder text-light " style="width: 12rem;">EMC-MUSIC platform</p>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i> <br>Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="epn.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-guitar"></i><br>EPN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="discovery.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-icons"></i><br>Discovery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="library.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-music"></i><br>Library</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="emplayer.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-headphones"></i><br>em-Player</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="settings.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-cogs"></i><br>Settings</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signIn">&nbsp;&nbsp;&nbsp;<i class="fas fa-user"></i><br>Sign In</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signUp">&nbsp;&nbsp;&nbsp;<i class="fas fa-user-plus"></i><br>Sign Up</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-light fw-bolder"  type="submit"><i class="fas fa-search"></i>&nbsp;Search</button>
+				</form>
+			</div>
+		</div>
+		<!-- modal sign in -->
+		<div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content bg-dark text-light">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">SignIn</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- sign form -->
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">SignIn here</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- close modal sign in -->
+		<!-- modal signUp -->
+		<div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content bg-dark text-light">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- sign form -->
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">SignUp here</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- close modal signUp -->
+	</nav>	
+	<!-- content -->
+	<div>
+		<br><br>
+
+		<div class="row">
+			<div class="col-md-5">
+
+			</div>
+			<div class="col-md-4 fw-bold text-secondary">
+				<marquee> Infinity Rock Medley Sound Track 2021</marquee>
+			</div>
+			<div class="col-md-3 text-warning fw-bold">
+				Trending
+				<div class="spinner-grow text-warning" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-1">
+
+			</div>
+			<div class="col-md-2">
+				<img src="images/music.gif" width="300">
+			</div>
+			<div class="col-md-2">
+
+			</div>
+			<div class="col-md-3" >
+
+				<table class="table table-black table-borderless text-light">
+
+					<tbody>
+						<tr>
+							<th class="text-warning fw-bol">Infinity Rock Medley</th>
+
+						</tr>
+						<tr>
+							<th class="text-success fw-bold">3 min 34 sec</th>
+
+						</tr>
+						<tr>
+							<th class="text-info fw-bold">AR ft Jack Main</th>
+
+						</tr>
+						<tr>
+							<th>
+								<i class="fas fa-backward"></i>
+								<i class="fas fa-play"></i>
+								<i class="fas fa-pause"></i>
+								<i class="fas fa-stop"></i>
+								<i class="fas fa-forward"></i>
+								<i class="fas fa-record-vinyl text-success"></i>
+								<i class="fas fa-heart text-danger"></i>
+							</th>
+
+						</tr>
+						<tr>
+							<th class="fw-bold text-secondary">Rate :
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+								<i class="fas fa-star text-warning"></i>
+							</th>
+
+						</tr>
+						<tr>
+							<th class="text-info fw-bold">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									Find Music Like This
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content bg-warning">
+											<div class="modal-header">
+												<h5 class="modal-title text-success fw-bold" id="exampleModalLabel">About my activity</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body text-success fw-bold">
+												How is it?
+												<br>
+												<img src="images/like.gif" width="300" class="rounded float-start" alt="...">
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</th>
+
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-1">
+
+			</div>
+
+			<div class="col-md-3">
+				<img src="images/img1.jpg" class="img-fluid img-thumbnail" alt="...">
+				<img src="images/img2.jpg" class="img-fluid img-thumbnail" alt="...">
+			</div>
+		</div>
+	</div>
+	<!-- close content -->
+	<!-- Footer -->
+	<section class="">
+		<footer class="text-center text-white" style="background-color: #6f42c1;">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Social media -->
+				<section class="mb-4">
+					<section class="mb-4">
+						<!-- Facebook -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #3b5998;"
+						href="#!"
+						role="button"
+						><i class="fab fa-facebook-f"></i
+						></a>
+
+						<!-- Twitter -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #55acee;"
+						href="#!"
+						role="button"
+						><i class="fab fa-twitter"></i
+						></a>
+
+						<!-- Google -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #dd4b39;"
+						href="#!"
+						role="button"
+						><i class="fab fa-google"></i
+						></a>
+
+						<!-- Instagram -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #ac2bac;"
+						href="#!"
+						role="button"
+						><i class="fab fa-instagram"></i
+						></a>
+
+						<!-- Linkedin -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #0082ca;"
+						href="#!"
+						role="button"
+						><i class="fab fa-linkedin-in"></i
+						></a>
+						<!-- Github -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #333333;"
+						href="#!"
+						role="button"
+						><i class="fab fa-github"></i
+						></a>
+					</section>
+					<!-- Section: Social media -->
+				</div>
+				<!-- Grid container -->
+
+				<!-- Copyright -->
+				<div class="fw-bolder text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+					© 2021 Copyright:
+					<a class="text-white" href="https://emcmusicplateform.com/">EMCmusicplatform.com</a>
+				</div>
+				<!-- Copyright -->
+			</footer>
+			<!-- Footer -->
+		</section>
+
+	</body>
+	</html>

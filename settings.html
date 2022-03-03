@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UI&UX-Assignment</title>
+	<!-- how to install bootsrap in offline way -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="emplayer.css">
+	<!-- fa icons -->
+	<script src="https://kit.fontawesome.com/aeca8c0752.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="setting.css">
+	<script type="text/javascript" src="dis.js"></script>
+	<link rel="stylesheet" type="text/css" href="contentBody.css">
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6f42c1; ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="images/emclogo.jpg" alt="" width="90" height="72"></a> 
+			<p class="fw-bolder text-light " style="width: 12rem;">EMC-MUSIC platform</p>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-home"></i> <br>Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="epn.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-guitar"></i><br>EPN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="discovery.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-icons"></i><br>Discovery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="library.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-music"></i><br>Library</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="emplayer.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-headphones"></i><br>em-Player</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="settings.html">&nbsp;&nbsp;&nbsp;<i class="fas fa-cogs"></i><br>Settings</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signIn">&nbsp;&nbsp;&nbsp;<i class="fas fa-user"></i><br>Sign In</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signUp">&nbsp;&nbsp;&nbsp;<i class="fas fa-user-plus"></i><br>Sign Up</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-light fw-bolder"  type="submit"><i class="fas fa-search"></i>&nbsp;Search</button>
+				</form>
+			</div>
+		</div>
+		<!-- modal sign in -->
+		<div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content bg-dark text-light">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">SignIn</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- sign form -->
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">SignIn here</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- close modal sign in -->
+		<!-- modal signUp -->
+		<div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content bg-dark text-light">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- sign form -->
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">SignUp here</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- close modal signUp -->
+	</nav>	
+	<!-- content -->
+	<div class="d-flex flex-row shadow nav-border contentBody">
+		<div class="d-flex align-items-start">
+			<div class="nav flex-column nav-pills me-3 nav-shadow pb-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<button class="nav-link active" id="v-pills-visualappearance-tab" data-bs-toggle="pill" data-bs-target="#v-pills-visualappearance" type="button" role="tab" aria-controls="v-pills-visualappearance" aria-selected="true">
+					<div class="circle-icon d-flex align-items-center justify-content-center me-3"> <i class="fab fa-simplybuilt"></i> </div>
+					Visual appearance 
+				</button>
+				<button class="nav-link" id="v-pills-languagesettings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-languagesettings" type="button" role="tab" aria-controls="v-pills-languagesettings" aria-selected="false">
+					<div class="circle-icon d-flex align-items-center justify-content-center me-3"> <i class="fas fa-language"></i> </div>
+					Language settings
+				</button>
+				<button class="nav-link" id="v-pills-paymentoption-tab" data-bs-toggle="pill" data-bs-target="#v-pills-paymentoption" type="button" role="tab" aria-controls="v-pills-paymentoption" aria-selected="false">
+					<div class="circle-icon d-flex align-items-center justify-content-center me-3"> <i class="fas fa-users-cog"></i> </div>
+					Payment Option
+				</button>
+				
+			</div>
+			<!-- tabcontent -->
+			<div class="tab-content" id="v-pills-tabContent">
+				<div class="tab-pane fade show active pt-4 me-4" id="v-pills-visualappearance" role="tabpanel" aria-labelledby="v-pills-visualappearance-tab">
+					<h3>Visual appearance</h3>
+					<br>
+					<h4>Change font size</h4>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" checked value="option1">
+						<label class="form-check-label" for="inlineRadio1">&nbsp;Small</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"  value="option2">
+						<label class="form-check-label" for="inlineRadio2">&nbsp;Medium</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"  value="option3">
+						<label class="form-check-label" for="inlineRadio3">&nbsp;Large </label>
+					</div>
+					<br><br>
+					<h4>Change font style</h4>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="fontstyle" id="fontstyle1"  value="option1">
+						<label class="form-check-label" for="fontstyle1">&nbsp;Italic</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="fontstyle" id="fontstyle2" value="option2">
+						<label class="form-check-label" for="fontstyle2">&nbsp;Bold</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="fontstyle" id="fontstyle3" checked value="option3">
+						<label class="form-check-label" for="fontstyle3">&nbsp;Custom</label>
+					</div>
+					<br><br>
+					<h4>Change background color</h4>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="bgColor" id="bgcolor1" value="option1">
+						<label class="form-check-label" for="bgcolor1">&nbsp;Light</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="bgColor" id="bgcolor2" checked value="option2">
+						<label class="form-check-label" for="bgcolor2">&nbsp;Dark</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="bgColor" id="bgcolor3" value="option3">
+						<label class="form-check-label" for="bgcolor3">&nbsp;Custom </label>
+					</div>
+					<br><br>
+					
+
+				</div>
+				<div class="tab-pane fade pt-4 me-4" id="v-pills-languagesettings" role="tabpanel" aria-labelledby="v-pills-languagesettings-tab">
+					<h3>Language settings</h3>
+					<br>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="languageSettings" id="languageSettings1" value="option1">
+						<label class="form-check-label" for="languageSettings1">&nbsp;English</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="languageSettings" id="languageSettings2" checked value="option2">
+						<label class="form-check-label" for="languageSettings2">&nbsp;Sinhala</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="languageSettings" id="languageSettings3" value="option3">
+						<label class="form-check-label" for="languageSettings3">&nbsp;Tamil </label>
+					</div>
+					<br><br>
+
+
+				</div>
+				<div class="tab-pane fade pt-4 me-4" id="v-pills-paymentoption" role="tabpanel" aria-labelledby="v-pills-paymentoption-tab">
+					<h3>Payment option</h3>
+					<br>
+					<div class="d-grid gap-2">
+						<button class="btn btn-success" type="button">Change Username</button>
+						<button class="btn btn-warning" type="button">Change Account No.</button>
+					</div>
+				</div>
+
+
+
+
+			</div>
+			
+
+
+		</div>
+	</div>
+
+	<!-- close content -->
+	<!-- Footer -->
+	<section class="">
+		<footer class="text-center text-white" style="background-color: #6f42c1;">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Social media -->
+				<section class="mb-4">
+					<section class="mb-4">
+						<!-- Facebook -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #3b5998;"
+						href="#!"
+						role="button"
+						><i class="fab fa-facebook-f"></i
+						></a>
+
+						<!-- Twitter -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #55acee;"
+						href="#!"
+						role="button"
+						><i class="fab fa-twitter"></i
+						></a>
+
+						<!-- Google -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #dd4b39;"
+						href="#!"
+						role="button"
+						><i class="fab fa-google"></i
+						></a>
+
+						<!-- Instagram -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #ac2bac;"
+						href="#!"
+						role="button"
+						><i class="fab fa-instagram"></i
+						></a>
+
+						<!-- Linkedin -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #0082ca;"
+						href="#!"
+						role="button"
+						><i class="fab fa-linkedin-in"></i
+						></a>
+						<!-- Github -->
+						<a
+						class="btn btn-primary btn-floating m-1"
+						style="background-color: #333333;"
+						href="#!"
+						role="button"
+						><i class="fab fa-github"></i
+						></a>
+					</section>
+					<!-- Section: Social media -->
+				</div>
+				<!-- Grid container -->
+
+				<!-- Copyright -->
+				<div class="fw-bolder text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+					© 2021 Copyright:
+					<a class="text-white" href="https://emcmusicplateform.com/">EMCmusicplatform.com</a>
+				</div>
+				<!-- Copyright -->
+			</footer>
+			<!-- Footer -->
+		</section>
+
+	</body>
+	</html>
